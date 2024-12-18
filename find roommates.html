@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Roommates - Roommate Finder</title>
+    <link rel="stylesheet" href="style.css"> <!-- Make sure the path is correct -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <h1>Find Your New Roomie!</h1>
+    </header>
+    <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="find roommates.html">Find Roommates</a></li>
+                <li><a href="apartment listings.html">Apartment Listings</a></li>
+            </ul>
+        </nav>
+    <main>
+        <form id="roommateForm" class="roommate-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
+
+            <label for="school">School Attended:</label>
+            <input type="text" id="school" name="school" required>
+
+            <label for="num-roommates">How Many Roommates Looking For:</label>
+            <input type="number" id="num-roommates" name="num-roommates" required>
+
+            <label for="budget">Budget:</label>
+            <input type="text" id="budget" name="budget" required>
+
+            <label for="area">Area You Want to Live In:</label>
+            <input type="text" id="area" name="area" required>
+
+            <button type="submit">Find Your New Roomie</button>
+        </form>
+        <div id="message"></div>
+    </main>
+    <footer>
+        © Roommate Finder. All rights reserved.
+        <button id="darkModeToggle">Toggle Dark Mode</button>
+
+    </footer>
+    <script src="assests/java.js"></script> <!-- Ensure this is the correct path and name -->
+</body>
+</html>
+

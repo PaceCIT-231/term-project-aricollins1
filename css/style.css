@@ -1,0 +1,89 @@
+/* Basic resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; /* Consistent, modern font throughout the site */
+}
+
+body {
+    color: #333; /* Dark grey text for better readability */
+    background-color: #f4f4f4; /* Neutral light grey background */
+    line-height: 1.6; /* Improved line spacing for readability */
+}
+
+/* Styling for main content container */
+.content {
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+    max-width: 1200px; /* Optimal content width for reading */
+    margin: 20px auto; /* Center content with vertical spacing */
+    background: white; /* Contrast background for content isolation */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Soft shadow for depth */
+    border-radius: 8px; /* Rounded corners for a softer look */
+}
+
+/* Header and navigation styles */
+header {
+    background-color: #333;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    padding: 0 15px; /* Spacing between menu items */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    transition: color 0.3s, background-color 0.3s; /* Smooth transition for hover effects */
+}
+
+nav ul li a:hover, nav ul li a:focus {
+    background-color: #555; /* Subtle change for hover */
+    border-radius: 4px; /* Rounded corners for hover background */
+}
+
+/* Footer styling */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-top: 3px solid #444; /* Add a top border for visual separation from content */
+}
+
+/* Responsive adjustments for better mobile experience */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Stack navigation links vertically on smaller screens */
+    }
+
+    nav ul li {
+        padding: 10px 0; /* Adjust padding for stacked items */
+    }
+
+    .content {
+        padding: 15px;
+        margin: 10px;
+        border-radius: 5px; /* Smaller radius for smaller screens */
+    }
+}
